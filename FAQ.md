@@ -15,3 +15,6 @@ Utiliser ceci:
 section de code que vous voulez que spotless ignore
 // spotless:off
 ```
+## Falcon 500 qui follow un autre Falcon
+Il faut cree un Follower et mettre dans les parametres le id du master falcon et si il est inverser ou non : private Follower m_follower = new Follower(id,inverser); 
+m_falcon.setControl(m_follower);

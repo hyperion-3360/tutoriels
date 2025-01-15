@@ -18,3 +18,6 @@ section de code que vous voulez que spotless ignore
 ## Falcon 500 qui follow un autre Falcon
 Il faut cree un Follower et mettre dans les parametres le id du master falcon et si il est inverser ou non : private Follower m_follower = new Follower(id,inverser); 
 m_falcon.setControl(m_follower);
+
+## CAN Spark Max import qui marche pas
+si vous faites new CANSparkMax il existe plus. le nom a change a seulement SparkMax et l'import est import com.revrobotics.spark.SparkMax;

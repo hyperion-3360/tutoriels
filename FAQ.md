@@ -22,3 +22,6 @@ m_falcon.setControl(m_follower);
 ## CAN Spark Max import qui marche pas
 si vous faites new CANSparkMax il existe plus. le nom a change a seulement SparkMax et l'import est import com.revrobotics.spark.SparkMax;
 si vous voulez d'autres infos sur les changements de spark max regarder : https://docs.revrobotics.com/brushless/revlib/revlib-overview/migrating-to-revlib-2025
+
+## "j'arrive pas a lire mes id"
+on a eu ce probleme avec les swerves, mais il faut s'assurer de regarder la map du board. voir le "board.png" pour plus d'infos.

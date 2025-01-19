@@ -25,3 +25,6 @@ si vous voulez d'autres infos sur les changements de spark max regarder : https:
 
 ## "j'arrive pas a lire mes id"
 on a eu ce probleme avec les swerves, mais il faut s'assurer de regarder la map du board. voir le "board.png" pour plus d'infos.
+
+## "je viens d'update WPILib et mon gradle task marche pas"
+regardez dans vos fichiers, car il est possible que le download que vous venez de faire de vscode se base sur l'ancienne version. effacez tout de l'ancienne version avant d'installer la nouvelle, cela vous eviteras des problemes.

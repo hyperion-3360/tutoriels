@@ -9,11 +9,11 @@ Effacer le répertoire .gradle dans le projet et refaire un build robot code.
 Ensuite le `./gradlew :spotlessApply` devrait fonctionner.
 
 ## Vous voulez que spotless arrête de se vouloir corriger une section d'un fichier
-Utiliser ceci:
+Utilisez ceci:
 ```
-// spotless:on
-section de code que vous voulez que spotless ignore
 // spotless:off
+section de code que vous voulez que spotless ignore
+// spotless:on
 ```
 ## Falcon 500 qui follow un autre Falcon
 Il faut cree un Follower et mettre dans les parametres le id du master falcon et si il est inverser ou non : private Follower m_follower = new Follower(id,inverser); 

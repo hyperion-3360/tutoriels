@@ -28,3 +28,15 @@ on a eu ce probleme avec les swerves, mais il faut s'assurer de regarder la map 
 
 ## "je viens d'update WPILib et mon gradle task marche pas"
 regardez dans vos fichiers, car il est possible que le download que vous venez de faire de vscode se base sur l'ancienne version. effacez tout de l'ancienne version avant d'installer la nouvelle, cela vous eviteras des problemes.
+
+## mon initSendable ne me permet pas d'éditer les valeurs affichées ou n'affiche pas toutes les valeurs des properties
+Il faut appeler l'instruction suivante au début de la méthode initSendable comme suit:
+@Override
+  public void initSendable(SendableBuilder builder) {
+    builder.setSmartDashboardType("RobotPreferences");
+
+Si la classe qui override le initSendable ne dérive pas d'une classe qui implément l'interface Sendable, il est IMPÉRATIF d'ajouter:
+    SendableRegistry.add(this, "<nom du module>", instances); 
+
+    ou instances est incrémenté à chaque appel du constructeur
+
